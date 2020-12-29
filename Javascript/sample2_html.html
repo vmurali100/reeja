@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Spread Operator
+
+      var person = { fname: "Murali", lname: "Krishna" };
+      //   var { fname, lname } = person;
+      var users = [
+        { fname: "a", lname: "Krishna" },
+        { fname: "Ram", lname: "Krishna" },
+        { fname: "c", lname: "Krishna" },
+        { fname: "k", lname: "Sundar" },
+      ];
+
+      //   let check = users.every((user) => {
+      //     return user.fname.length >= 3;
+      //   });
+      let check = users.some((user) => {
+        return user.fname.length >= 3;
+      });
+
+      console.log(check);
+
+      //   var filtered = users.find((user) => {
+      //     return user.fname.length == 3;
+      //   });
+
+      //   var filtered = users.filter((user) => {
+      //     return user.fname.length == 3;
+      //   });
+      //   console.log(filtered);
+      //   users.forEach(function () {}); // ES5 way of passing a callback Function
+      // Foreach loop will be used only for Iteration Purpose
+      //   var forUsers = users.forEach((user) => {
+      //     //   document.write(user.fname + "<br>");
+      //     user.deparment = "Dev";
+      //     return user;
+      //   });
+
+      //   console.log(forUsers);
+
+      //   var newUsers = users.map((user) => {
+      //     user.deparment = "Dev";
+      //     return user;
+      //   });
+      //   console.log(newUsers);
+      //   var [arrPerson1, arrPerson2, arrPerson3] = users;
+      //   console.log(arrPerson1);
+      //   console.log(arrPerson2);
+      //   console.log(arrPerson3);
+      //   var { fname, lname } = person;
+      //   document.write(fname + "<br/>" + lname);
+      //   var person2 = person;// referring a single memory
+
+      //   var person2 = Object.assign({}, person);
+      //   var person2 = { ...person };
+
+      //   console.log(person);
+      //   console.log(person2);
+
+      //   person2.fname = "Ram";
+
+      //   console.log(person);
+      //   console.log(person2);
+
+      // Var , Let And Const
+
+      //   function displyNos() {
+      //     // Functional Scope
+      //     for (let i = 0; i < 10; i++) {
+      //       // Block Scope
+      //       document.write(i + "<br>");
+      //     }
+
+      //     document.write("I Value After Loop is :-" + i);
+      //   }
+      //   displyNos();
+
+      //   let abc = "Murali"; // String
+      //   abc = 40;
+
+      //   console.log(abc);
+    </script>
+  </body>
+</html>
